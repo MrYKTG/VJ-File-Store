@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://graph.org/file/d6e3a7c39df4ad0372966.jpg" alt="XEON-STORE-BOT Logo">
+  <img src="https://graph.org/file/d6e3a7c39df4ad0372966.jpg" alt="XEON-File-STORE-BOT Logo">
 </p>
 <h1 align="center">
-  VJ FILE STORE BOT
+  XEON FILE STORE BOT
 </h1>
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+VJ-FILE-STORE-BOT;A+Highly+Advance+File+Store+Bot;Made+By+Yt-@Tech_VJ!;With+Clone+Feature+Stream/Download+Link;Custom+Url+Shortner+Auto+Delete+Feature;A+Bot+With+Fully+Advanced+Feature!;Must+Give+Credit+To+Tech+VJ;Because+He+Public+The+Paid+Repo;Thank+You!)
