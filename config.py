@@ -24,7 +24,7 @@ API_ID = int(environ.get("API_ID", "15529802"))
 API_HASH = environ.get("API_HASH", "92bcb6aa798a6f1feadbc917fccb54d3")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
-PICS = (environ.get('PICS', 'https://graph.org/file/1b5d8822491d62882fffb.jpg')).split() # Bot Start Picture
+PICS = (environ.get('PICS', 'https://graph.org/file/d6e3a7c39df4ad0372966.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '821215952').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "XeonFileStoreBot") # without @
 PORT = environ.get("PORT", "8080")
