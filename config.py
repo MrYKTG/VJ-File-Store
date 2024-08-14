@@ -36,7 +36,7 @@ CDB_NAME = environ.get("CDB_NAME", "Xeonfilestoreclone")
 
 # Database Information
 DB_URI = environ.get("DB_URI", "")
-DB_NAME = environ.get("DB_NAME", "Xeonfilestore")
+DB_NAME = environ.get("DB_NAME", "Xeonfile")
 
 # Auto Delete Information
 AUTO_DELETE_MODE = bool(environ.get('AUTO_DELETE_MODE', True)) # Set True or False
