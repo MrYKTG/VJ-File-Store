@@ -26,7 +26,7 @@ BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/983d1df5eb928257b8ea5.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '821215952').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "AnimeXeonbot") # without @
+BOT_USERNAME = environ.get("BOT_USERNAME", "FileStoreXeon2Bot") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
@@ -38,7 +38,7 @@ CDB_NAME = environ.get("CDB_NAME", "animexeonclone")
 
 # Database Information
 DB_URI = environ.get("DB_URI", "")
-DB_NAME = environ.get("DB_NAME", "Xeonfilestore02")
+DB_NAME = environ.get("DB_NAME", "FileStoreXeon2")
 
 # Auto Delete Information
 AUTO_DELETE_MODE = bool(environ.get('AUTO_DELETE_MODE', True)) # Set True or False
@@ -55,7 +55,7 @@ CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 
 # Enable - True or Disable - False
-PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
+PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), False)
 
 # Verify Info :-
 VERIFY_MODE = bool(environ.get('VERIFY_MODE', False)) # Set True or False
