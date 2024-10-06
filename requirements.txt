@@ -1,4 +1,4 @@
-pyrofork==2.3.43
+pyrofork==2.3.45
 Tgcrypto
 asyncio
 aiohttp
