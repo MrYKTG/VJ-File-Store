@@ -36,46 +36,24 @@ async def allowed(_, __, message):
 async def gen_link_s(bot, message):
     username = (await bot.get_me()).username
     replied = message.reply_to_message
-    
-    # Check if the user replied to a message
     if not replied:
         return await message.reply('Reply to a message to get a shareable link.')
-
-    # Handle media replies
-    if replied.media:
-        file_type = replied.media
-        if file_type not in [enums.MessageMediaType.VIDEO, enums.MessageMediaType.AUDIO, enums.MessageMediaType.DOCUMENT]:
-            return await message.reply("**ʀᴇᴘʟʏ ᴛᴏ ᴀ sᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴇᴅɪᴀ**")
-        
-        # Unpack the file ID and generate the share link
-        file_id, ref = unpack_new_file_id((getattr(replied, file_type.value)).file_id)
-        string = 'filep_' if message.text.lower().strip() == "/plink" else 'file_'
-        string += file_id
-        outstr = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=")
-    
-    # Handle text replies
-    elif replied.text:
-        string = 'text_'
-        string += base64.urlsafe_b64encode(replied.text.encode("ascii")).decode().strip("=")
-        outstr = string
-
-    else:
-        return await message.reply("**ʀᴇᴘʟʏ ᴛᴏ ᴀ sᴜᴘᴘᴏʀᴛᴇᴅ ᴛᴇxᴛ ᴏʀ ᴍᴇᴅɪᴀ**")
-
-    # Check if the message has protected content and the user is not an admin
+    file_type = replied.media
+    if file_type not in [enums.MessageMediaType.VIDEO, enums.MessageMediaType.AUDIO, enums.MessageMediaType.DOCUMENT]:
+        return await message.reply("**ʀᴇᴘʟʏ ᴛᴏ ᴀ sᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴇᴅɪᴀ**")
     if message.has_protected_content and message.chat.id not in ADMINS:
         return await message.reply("okDa")
-
+    
+    file_id, ref = unpack_new_file_id((getattr(replied, file_type.value)).file_id)
+    string = 'file_'
+    string += file_id
+    outstr = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=")
     user_id = message.from_user.id
     user = await get_user(user_id)
-    
-    # Generate the share link based on website URL mode
-    if WEBSITE_URL_MODE == True:
+    if WEBSITE_URL_MODE:
         share_link = f"{WEBSITE_URL}?Tech_VJ={outstr}"
     else:
         share_link = f"https://t.me/{username}?start={outstr}"
-
-    # Shorten the link if applicable
     if user["base_site"] and user["shortener_api"] is not None:
         short_link = await get_short_link(user, share_link)
         await message.reply(f"<b>⭕ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🖇️ sʜᴏʀᴛ ʟɪɴᴋ :- {short_link}</b>")
