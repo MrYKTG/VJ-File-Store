@@ -58,6 +58,8 @@ If You Want To Remove Api Then Copy This And Send To Bot - `/api None`"""
 
 👥 ᴄʜᴀɴɴᴇʟ: <a href=https://t.me/XeonFlix>Mᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ</a>
 
+🎖️ ʙᴜy ᴘʀᴇᴍɪᴜᴍ: <a href=https://t.me/+uQ67sH2k6HNiZTc1>ʙᴜy ᴘʀᴇᴍɪᴜᴍ</a>
+
 📢 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ: <a href=https://t.me/CornFlix_link>Bᴏᴛ 𝐔𝐩𝐝𝐚𝐭𝐞</a></b>
 """
 
@@ -97,7 +99,7 @@ If You Want To Remove Api Then Copy This And Send To Bot - `/api None`"""
 🔻 /link - ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴠɪᴅᴇᴏ ᴏʀ ғɪʟᴇ ᴛᴏ ɢᴇᴛ sʜᴀʀᴀʙʟᴇ ʟɪɴᴋ
 
 🔻 /batch - sᴇɴᴅ ғɪʀsᴛ ʟɪɴᴋ ᴏғ ғɪʟᴇ sᴛᴏʀᴇ ᴄʜᴀɴɴᴇʟ ᴘᴏsᴛ ᴛʜᴇɴ ʟᴀsᴛ ᴘᴏsᴛ ʟɪɴᴋ ᴀɴᴅ ᴍᴀᴋᴇ sᴜʀᴇ ʙᴏᴛ ɪs ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ғɪʟᴇ sᴛᴏʀᴇ ᴄʜᴀɴɴᴇʟ.
-ᴇx - /batch https://t.me/vj_botz/25 https://t.me/vj_botz/30
+ᴇx - /batch https://t.me/CornFlix_Link/1 https://t.me/CornFlix_Link/5
 
 🔻 /base_site - ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ sᴇᴛ ᴜʀʟ sʜᴏʀᴛɴᴇʀ ʟɪɴᴋ ᴅᴏᴍᴀɪɴ 
 ᴇx - /base_site ʏᴏᴜʀᴅᴏᴍᴀɪɴ.ᴄᴏᴍ
